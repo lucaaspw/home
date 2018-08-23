@@ -1,0 +1,157 @@
+/*GERAL*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#4d4d4d;
+}
+h1, h2 {
+    margin: 0;
+    font-family: "Roboto slab" , Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+/*NAVEGAÇÃO*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d; 
+    color: #4d4d4d;
+}
+nav h1 > a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family:  serif;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+nav ul li {
+    text-align: center;
+    width:100%;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+/*CABEÇALHO*/
+
+header {
+    background-image: url('imagens/fitness.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    height: 200px;
+}
+
+header p {
+    margin-bottom: 2em; 
+}
+/*SOBRE*/
+
+#conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-image: url('imagens/fundo1.jpg');
+}
+.botao {
+    text-decoration: none;
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 3px;
+    color: #000000;
+    
+}
+section >a {
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+    background-image: url('imagens/fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
+    border-radius: 4px;
+}
+section h2 {
+    text-align: center;
+}
+/*CONTEUDO*/
+#imc {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 250px;
+    background-color: #e25656;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    padding: 10px;
+    margin: 520px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+button {
+    background-color: rgb(68, 71, 71);
+    color: #fff;
+    padding: 5px;
+}
+
+/*CONTATO*/
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+section a {
+    text-decoration: none;
+}
+/*FOOTER*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4d4d4d;
+    color: #f1f1f1; 
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 760px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;        
+    }
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+
+    header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+
+}
